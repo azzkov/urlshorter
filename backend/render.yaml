@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: nourlplease-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    envVars:
+      - key: REDIS_USERNAME
+        value: "lima"
+      - key: REDIS_PASSWORD
+        value: "edivaN99972571@@"
+      - key: REDIS_HOST
+        value: "redis-11973.c259.us-central1-2.gce.redns.redis-cloud.com"
+      - key: REDIS_PORT
+        value: "11973"
